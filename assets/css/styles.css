@@ -150,6 +150,7 @@ main {
 /* Hero */
 .hero {
     padding-top: 100px;
+    padding-bottom: 70px;
 }
 .hero-container {
     display: flex;
@@ -349,4 +350,164 @@ main {
     font-weight: 500;
     line-height: 100%;
     text-decoration-line: underline;
+}
+
+/* About */
+.about {
+    margin-top: 77px;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 108px;
+}
+
+.about-content {
+    width: 40.76%;
+}
+.about-title {
+    position: relative;
+}
+.about-title::before {
+    position: absolute;
+    margin-bottom: 15px;
+    content: "//  About  //";
+    white-space: pre;
+    display: inline-block;
+    color: #5e6085;
+    font-family: Sora;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+    top: -20px;
+    left: 4px;
+}
+
+.about-desc {
+    width: 431px;
+    margin-top: 24px;
+}
+
+.about-form-container {
+    margin-top: 54px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 34px;
+    column-gap: 36px;
+}
+.about-label {
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    position: relative;
+    color: #48496a;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+}
+
+.about-label::before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border: 1px solid #181e52;
+    border-radius: 6px;
+    margin-right: 10px;
+}
+
+.about-label::after {
+    content: "";
+    display: inline-block;
+}
+.about-form-group [type="checkbox"]:checked ~ label::before {
+    background-color: #ff5b2e;
+    border-color: #ff5b2e;
+}
+
+.about-form-group [type="checkbox"]:checked ~ label::after {
+    position: absolute;
+    top: 4px;
+    left: 5px;
+    width: 13px;
+    height: 9px;
+    border-left: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    rotate: -45deg;
+}
+.about-img {
+    position: relative;
+}
+.about-img__image {
+    display: inline-block;
+    position: relative;
+    width: 450px;
+    height: 602px;
+    flex-shrink: 0;
+    object-fit: cover;
+    z-index: 10;
+}
+.about-img::before {
+    content: url(../images/about-trangtri.svg);
+    position: absolute;
+    right: -70px;
+    bottom: 55%;
+}
+.about-img__background {
+    position: absolute;
+    width: 494px;
+    height: 336px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    background: linear-gradient(180deg, #fce0ef 0%, #fac3d1 100%);
+    box-shadow: 11px 18px 65px 0px rgba(255, 155, 121, 0.12);
+    bottom: 34px;
+}
+
+.about-img__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    width: 136px;
+    height: 156px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #5bd6e2;
+    box-shadow: -15px 26px 48px 0px rgba(85, 240, 255, 0.17);
+    top: 25%;
+    left: -92px;
+}
+
+.about-img__info::before {
+    position: absolute;
+    content: url(../images/about-images-cat.svg);
+    top: -34px;
+    right: -34px;
+}
+.about-img__info .sub-title {
+    padding: 31px 26px 0;
+    color: #fff;
+    text-align: center;
+    font-family: Sora;
+    font-size: 4.2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+}
+
+.about-img__info .sub-desc {
+    width: 83px;
+    margin-top: 14px;
+    color: #c6f4f9;
+    text-align: center;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 142.857%;
 }
