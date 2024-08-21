@@ -115,17 +115,20 @@ main {
 }
 
 .header__list .item a {
+    display: inline-block;
     color: #5e6085;
     font-size: 1.4rem;
     font-style: normal;
     font-weight: 500;
     line-height: 100%;
+    transition: scale 0.4s;
 }
 
 .header__list .item a:hover {
     text-decoration: underline;
     font-weight: 600;
     color: #000958;
+    transform: scale(1.3);
 }
 
 .btn-sign-up {
@@ -354,7 +357,8 @@ main {
 
 /* About */
 .about {
-    margin-top: 77px;
+    margin-top: 87px;
+    padding: 53px 0;
 }
 
 .about-container {
@@ -466,7 +470,8 @@ main {
     border-radius: 16px;
     background: linear-gradient(180deg, #fce0ef 0%, #fac3d1 100%);
     box-shadow: 11px 18px 65px 0px rgba(255, 155, 121, 0.12);
-    bottom: 34px;
+    bottom: 2px;
+    right: -31px;
 }
 
 .about-img__info {
@@ -510,4 +515,156 @@ main {
     font-style: normal;
     font-weight: 400;
     line-height: 142.857%;
+}
+
+/* Vacation */
+.vacation {
+    padding: 20px 0;
+    margin-top: 57px;
+}
+
+.vacation-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 127px;
+}
+
+.vacation-img {
+    position: relative;
+}
+.vacation-img__image {
+    position: relative;
+    z-index: 3;
+    width: 458px;
+    height: 500px;
+    flex-shrink: 0;
+    object-fit: cover;
+    display: inline-block;
+}
+
+.vacation-img__wrap::after {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    content: "";
+    display: inline-block;
+    width: 458px;
+    height: 500px;
+    flex-shrink: 0;
+    border-radius: 18px;
+    border: 2px #fff;
+    background: linear-gradient(180deg, #c6e2fa 0%, #94c2ea 100%);
+    box-shadow: 0px 17px 77px -8px rgba(190, 165, 139, 0.17);
+}
+
+.vacation-img__item {
+    position: absolute;
+}
+
+.vacation-img__item.one {
+    z-index: 99;
+    top: -24px;
+    right: 5px;
+}
+
+.vacation-img__item.two {
+    z-index: 99;
+    top: 28px;
+    right: -29px;
+}
+.vacation-img__item.three {
+    z-index: 99;
+    top: 50%;
+    right: -30px;
+}
+.vacation-img__item.four {
+    z-index: 99;
+    right: -49px;
+    bottom: -54px;
+}
+.vacation-img__item.five {
+    z-index: 99;
+    top: 10px;
+    right: 60px;
+}
+.vacation-img__item.six {
+    z-index: 99;
+    top: 67%;
+    right: 20px;
+}
+
+.vacation-title {
+    color: #000958;
+}
+
+.vacation-desc {
+    margin-top: 24px;
+    width: 511px;
+}
+
+.vacation-booking {
+    padding-bottom: 14px;
+    position: relative;
+    margin-top: 52px;
+    display: flex;
+    align-items: center;
+    column-gap: 56px;
+}
+
+.vacation-booking::after {
+    display: inline-block;
+    position: absolute;
+    left: 8px;
+    top: 37px;
+    content: "";
+    width: 95px;
+    height: 2px;
+    background: #ff5b2e;
+}
+.vacation-booking__item {
+    display: flex;
+    align-items: center;
+}
+
+.vacation-booking__desc {
+    white-space: nowrap;
+    color: #48496a;
+    font-family: Sora;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+}
+
+.vacation-press {
+    display: flex;
+    align-items: center;
+    column-gap: 11px;
+}
+.vacation-press:hover {
+    text-decoration: underline;
+    text-shadow: -1px 7px 8px rgba(0, 0, 0, 0.11);
+}
+
+.vacation-booking__desc-more {
+    width: 391px;
+    margin-top: 36px;
+    font-size: 1.4rem;
+    color: #656689;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 171.429%;
+}
+
+.vacation__view-more {
+    margin-top: 53px;
+    display: inline-block;
+    color: #ff5d31;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+    text-decoration: underline;
 }
